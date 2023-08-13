@@ -1,12 +1,136 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <h1>
-            Hi, my name is Anthony Moore
-        </h1>
-        <p> welcome to my blog. This is a place where I will track my progress learning about IT. I have an interest in web developement,
-            software developement and cyber security. You'll find posts here regarding all of my latest projects and interests. </p>
-        <p> I'm going to start by following The Oden project. My first submission is my recipe site</p>
-        <a href="Oden/Recipes/recipes.html">Recipes</a>
-        </body>
+        
+
+        <nav>
+            <a class="navLink">/AboutMe</a>
+            <a class="navLink">/Projects</a>
+            <a class="navLink">/Blog</a>
+            <button>
+                <svg class="menu-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6L6 19M6 6l13 13" stroke="white" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+        </nav>
+        <!--Greeting-->
+        <div class="section" id="splash">
+            <div class="content" id="welcome">
+                <h1 class="title">
+                    Hey, you've reached Anthony's Spot
+                </h1>
+                <p>
+                    a place where I document my journey in the world of programming and cyber security.
+                </p>
+                <p id="jumpToBlog">
+                    Jump to latest blog post
+                </p>
+            </div>
+            <img>
+        <!--AboutMe + Skills-->
+        <div class="section" id="aboutMe">
+            <div class="content" id="personalSummary">
+                <h2 class="title">
+                    ~/AboutMe
+                </h2>
+                <p>
+                Since graduating from Kent State University in Ohio, I've moved to Nashville Tennessee
+                to pursue oportunities in web development and information security.
+                In addition to expanding my knowledge in web development through projects,
+                I'm pursing the CompTIA A+, Network+, and Security+ certifications. I'll write
+                about this experience in <a>my blog</a> as I recieve them.
+                </p>
+            </div>
+            <div class="content" id="techSkills">
+                <h2 class="title">
+                ~/Skills
+                </h2>
+                <div class="techSkill">
+                    <img class="techImg">
+                    <h3 class="techName">HTML</h3>
+                </div>
+                <div class="techSkill">
+                    <img class="techImg">
+                    <h3 class="techName">CSS</h3>
+                </div>
+                <div class="techSkill">
+                    <img class="techImg">
+                    <h3 class="techName">JAVASCRIPT</h3>
+                </div>
+                <div class="techSkill">
+                    <img class="techImg">
+                    <h3 class="techName">C++</h3>
+                </div>
+                <div class="techSkill">
+                    <img class="techImg">
+                    <h3 class="techName">PYTHON</h3>
+                </div>
+                <div class="techSkill">
+                    <img class="techImg">
+                    <h3 class="techName">RESTful APIs</h3>
+                </div>
+            </div>
+        </div>
+        <!--Projects-->
+        <div class="section" id="projects">
+            <div class="title">
+            ~/Projects
+            </div>
+            <!--OdenProjects-->
+            <div class="project">
+                <h3 class="projectTitles">
+                    OdenProjects/
+                </h3>
+                <p class="description">
+                    A series of projects meant to demonstrate milestones in web development knowledge
+                </p>
+            </div>
+            <!--GPXVisualizer-->
+            <div class="project">
+                <h3 class="projectTitles">
+                    GPXVisualizer/
+                </h3>
+                <p class="description">
+                    My group capstone project that uses location data from user activities to create personal artwork 
+                </p>
+            </div>
+            <!--Descrambler-->
+            <div class="project">
+                <h3 class="projectTitles">
+                    Descrambler/
+                </h3>
+                <p class="description">
+                    A python program that tells you what English words can be made with a given set of letters
+                </p>
+            </div>
+            <!--Blog Project-->
+            <div class="project">
+                <h3 class="projectTitles">
+                    Blog/
+                </h3>
+                <p class="description">
+                    A record of the projects I’ve been working on, problems I encountered, and lessons I learned
+                </p>
+            </div>
+        </div>
+        <!--Blog-->
+        <div class="section" id="bloglatestpost">
+            <div class="content">
+                <h2 class="title">
+                ~/LatestBlogPost
+                </h2>
+            </div>
+        </div>
+        <!--Content-->
+        <div class="section" id="contact">
+            <div class="content">
+                <h2 class="title">
+                ~/Contact
+                </h2>
+                <h3>
+                I'm currently open to opportunities. Feel free to contact me :D
+                </h3>
+            </div>
+        </div>
+    </body>
 </html>
