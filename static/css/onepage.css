@@ -41,7 +41,6 @@
 */
 
 body{
-    background-color: #f5f4f7;
     color:rgb(0, 0, 0);
     margin:0px;
     display: flex;
@@ -301,10 +300,10 @@ navButtons.submit{
 @media (min-width:701px){
     #fixedBar{
         display:flex;
-        background-color:#f8f8f8;
+        background-color:#d9d9d9;
         max-width:780px;
         align-self:center;
-        margin-inline:15px;
+        padding-inline:15px;
     }
 
     #splash{
