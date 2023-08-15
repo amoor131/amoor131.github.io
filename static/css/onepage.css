@@ -3,17 +3,12 @@
 /*navigation*/
 
 #fixedBar{
-    background-color: #ffffff;
+    background-color: none;
     position:fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 8vh;
-    display:flex;
-    align-content:flex-end;
-    justify-content:space-around;
-    align-items:center;
-    box-shadow: 0px 10px 0px rgb(0 0 0 / 25%);
 }
 
 .navLink{
@@ -21,12 +16,9 @@
 }
 
 /*General*/
-
-
 *{
     border: 1px solid red;
 }
-
 
 body{
     background-color: #e7e6e9;
@@ -38,6 +30,12 @@ body{
     justify-content: center;
     font-family: 'Barlow', sans-serif;
 }
+
+img{
+    max-width:100%;
+    display:block;
+}
+
 
 h1{
     font-size:40px;
@@ -62,10 +60,6 @@ a{
     color: #4753DB;
 }
 
-img{
-    max-width:100%;
-    display:block;
-}
 
 .separator {
     border: none;
@@ -76,25 +70,21 @@ img{
 .section{
     display:flex;
     flex-direction: column;
-    min-height:84vh;
-    min-width: none;
-    width:1000px;
-    max-width:90%;
-    margin-bottom:20vh;
-    border-radius: 20px;
-    background-color: none;
+    background-color:#4753DB;
     align-self:center;
     /*box-shadow: 12px 12px 10px rgb(0 0 0 / 25%),
-               -5px -5px 5px rgba(255, 255, 255, 0.25);*/
-    
+                -5px -5px 5px rgba(255, 255, 255, 0.25);*/
+    height:85vh;
+    padding-top:15vh;
+    margin-bottom:20vh;
 }
 
-/*
+
 .section > .content{
-    padding: 2vh;
-    padding-top:4vh;
+    display:flex;
+    flex-direction: column;
 }
-*/
+
 
 .title{
     margin:0px;
@@ -104,7 +94,8 @@ img{
 /*Greeting*/
 
 #splash{
-    margin-top: 13vh;
+    height:80vh;
+    padding-top:20vh;
 }
 
 #welcome{
@@ -208,7 +199,7 @@ img{
 
 #contact{
     background-color: none;
-    margin-bottom:10%;
+    margin-bottom:10vh;
 }
 
 #contactForm{
@@ -261,8 +252,38 @@ input:-webkit-autofill:focus {
     width:fit-content;
 }
 
+@media (max-width:360px){
+    #introPicContainer{
+        width:90vw;
+    }
+    #introPic{
+        width:90vw;
+    }
+    .techSkills{
+        grid-template-columns:repeat(1,auto);
+    }
+}
+
 @media (min-width:701px){
+    #splash{
+        height:100vh;
+        padding-top:0vh;
+        justify-content: center;
+    }
+    
     .section{
+        max-width:810px;
+    }
+
+    .section > .content{
         flex-direction: row;
+        margin-inline:15px;
+    }
+    #welcome{
+        margin-left:15px;
+        max-width:435px;
+    }
+    .content:last-child{
+        margin-left:15px;
     }
 }
