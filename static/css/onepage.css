@@ -3,16 +3,21 @@
 /*navigation*/
 
 #fixedBar{
-    background-color: none;
+    background-color:#d9d9d9;
     position:fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 8vh;
+    height: 60px;
 }
 
 .navLink{
     font-size: 40px;
+}
+
+.removeDefaultStyle{
+    border: none;
+    background-color: #00ffff00;
 }
 
 /*General*/
@@ -21,13 +26,14 @@
 }
 
 body{
-    background-color: #e7e6e9;
+    background-color: #f5f4f7;
     color:rgb(0, 0, 0);
     margin:0px;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    font-size:20px;
     font-family: 'Barlow', sans-serif;
 }
 
@@ -70,25 +76,22 @@ a{
 .section{
     display:flex;
     flex-direction: column;
-    background-color:#4753DB;
-    align-self:center;
+    background-color:#f8f8f8;
     /*box-shadow: 12px 12px 10px rgb(0 0 0 / 25%),
                 -5px -5px 5px rgba(255, 255, 255, 0.25);*/
-    height:85vh;
-    padding-top:15vh;
-    margin-bottom:20vh;
 }
 
 
 .section > .content{
+    margin-block:20px;
+    margin-inline:20px;
     display:flex;
     flex-direction: column;
 }
 
 
 .title{
-    margin:0px;
-    
+    width:100%;
 }
 
 /*Greeting*/
@@ -123,12 +126,18 @@ a{
     background-color: none;
 }
 
+#personalSummary{
+    flex:1;
+}
+
 /*Skills*/
 
 #skills{
+    flex:1;
     display:flex;
     flex-direction: column;
-    padding-top:0px;
+    margin-top:15px;
+    align-content: ;
 }
 
 /*  these should be in grid form  */
@@ -157,45 +166,56 @@ a{
 
 }
 
-.projectTitles{
-
+.projectTitle{
+    margin:0px;
 }
 
 .description{
-
+    margin:0px;
 }
 
 /*Blog*/
 
-#blogLatestPost{
+#blogLatestPosts{
     background-color: none;
 }
 
-#blogPosts{
-    
+#postsFlow{
+    display:flex;
+    flex-direction:column;
 }
 
 .recentBlogPost{
     border-radius: 20px;
-    border: 3px solid white;
+    border: 3px solid #958989;
     margin-block:2vh;
     padding-inline:1vh;
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
 
 }
 
+.blogTitle{
+    margin-top:20px;
+    margin-bottom: 0px;
+}
+
 .blogTitles{
-    margin:0;
+    margin-bottom:0px;
+    margin-top:20px;
     color: #000000;
 }
 
 .blogPostDate{
     font-size: .5em;
-    margin-inline: 0px;
+    margin: 0px;
 }
 
-/*Content*/
+.blogSpacing{
+    margin:10px;
+}
+
+/*Contact*/
 
 #contact{
     background-color: none;
@@ -205,9 +225,13 @@ a{
 #contactForm{
     display:flex;
     flex-direction: column;
-    font-size:50px;
     padding:1vh;
     border: 1px solid white;
+}
+
+#contactVert{
+    display:flex;
+    flex-direction: column;
 }
 
 /* Style autofill appearance for inputs */
@@ -220,11 +244,11 @@ input:-webkit-autofill:focus {
 #name, #email, #message{
     background-color: none;
     border:none;
-    color:rgb(0, 0, 0);
+    color:rgb(22 22 22);
     margin-block:2vh 3vh;
-    min-width:100%;
+    width:99%;
     min-height:auto;
-    font-size: 50px;
+    font-size: 1em;
     font-family: 'Barlow', sans-serif;
 }
 
@@ -244,10 +268,10 @@ input:-webkit-autofill:focus {
 }
 
 .submit{
-    font-size:50px;
-    color: aliceblue;
+    color: rgb(22 22 22);
     background:none;
     border: 1px solid aliceblue;
+    font-size: 1em;
     font-family: 'Barlow', sans-serif;
     width:fit-content;
 }
@@ -265,6 +289,16 @@ input:-webkit-autofill:focus {
 }
 
 @media (min-width:701px){
+    #fixedBar{
+        display:flex;
+        background-color:#00000000;
+        max-width:810px;
+        align-self:center;
+    }
+
+    #navButtons{
+    }
+
     #splash{
         height:100vh;
         padding-top:0vh;
@@ -284,6 +318,11 @@ input:-webkit-autofill:focus {
         max-width:435px;
     }
     .content:last-child{
+        margin-left:15px;
+    }
+
+    #skills{
+        margin-top:0px;
         margin-left:15px;
     }
 }

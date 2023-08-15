@@ -15,32 +15,33 @@
 
   <body>
     <nav id="fixedBar">
-      <button>
-        <svg
-          width="6vh"
-          height="6vh"
-          viewBox="0 0 100 100"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <line
-            x1="10"
-            y1="10"
-            x2="90"
-            y2="90"
-            stroke="black"
-            stroke-width="5"
-          />
-          <line
-            x1="10"
-            y1="90"
-            x2="90"
-            y2="10"
-            stroke="black"
-            stroke-width="5"
-          />
-        </svg>
-      </button>
-
+      <content class="navButtons">
+        <button class="removeDefaultStyle">
+          <svg
+            width="50px"
+            height="50px"
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="10"
+              y1="10"
+              x2="90"
+              y2="90"
+              stroke="black"
+              stroke-width="5"
+            />
+            <line
+              x1="10"
+              y1="90"
+              x2="90"
+              y2="10"
+              stroke="black"
+              stroke-width="5"
+            />
+          </svg>
+        </button>
+      </content>
       <!--
         <a class="navLink greenText">/AboutMe</a>
       <a class="navLink greenText">/Projects</a>
@@ -76,7 +77,6 @@
       <div class="content">
         <div id="personalSummary">
           <h2 class="title greenText">~/AboutMe</h2>
-          <hr class="separator" />
           <p>
             Since graduating from Kent State University in Ohio, I've moved to
             Nashville Tennessee to pursue oportunities in web development and
@@ -114,14 +114,12 @@
     <!--Projects-->
     <div class="section" id="projects">
       <div class="content">
-        <div class="projectSectionTitle">
-          <h2 class="title greenText">~/Projects</h2>
-        </div>
         <div class="projects">
+          <h2 class="title greenText">~/Projects</h2>
           <!--OdenProjects-->
           <div class="project">
-            <a href="/OdenProjects" class="projectTitles blueText">
-              <h3>OdenProjects/</h3>
+            <a href="/OdenProjects" class="blueText">
+              <h3 class="projectTitle">OdenProjects/</h3>
             </a>
             <p class="description">
               A series of projects meant to demonstrate milestones in web
@@ -131,7 +129,7 @@
           <!--GPXVisualizer-->
           <div class="project">
             <a href="https://gpxvis.com" class="projectTitles blueText">
-              <h3>GPXVisualizer/</h3>
+              <h3 class="projectTitle">GPXVisualizer/</h3>
             </a>
             <p class="description">
               My group capstone project that uses location data from user
@@ -141,7 +139,7 @@
           <!--Descrambler-->
           <div class="project">
             <a href="/Descrambler" class="projectTitles blueText">
-              <h3>Descrambler/</h3>
+              <h3 class="projectTitle">Descrambler/</h3>
             </a>
             <p class="description">
               A python program that tells you what English words can be made
@@ -151,7 +149,7 @@
           <!--Blog Project-->
           <div class="project">
             <a href="/Blog" class="projectTitles blueText">
-              <h3>Blog/</h3>
+              <h3 class="projectTitle">Blog/</h3>
             </a>
             <p class="description">
               A record of the projects I’ve been working on, problems I
@@ -162,27 +160,26 @@
       </div>
     </div>
     <!--Blog-->
-    <div class="section" id="blogLatestPost">
-      <div class="content">
-        <div id="blogSectionTitle">
-          <h2 class="title greenText">~/LatestBlogPost</h2>
-        </div>
-        <div id="blogPosts">
-          <div class="recentBlogPost">
-            <a href="/Blog/MakingThisBlog">
-              <h3 class="blogTitles">Making This Blog</h3>
+    <div class="section" id="blogLatestPosts">
+      <div class="content" id="postsFlow">
+        <h2 class="title greenText">~/LatestBlogPosts</h2>
+        <div class="recentBlogPost">
+          <h3 class="blogTitles">
+            <a href="/Blog/MakingThisBlog" class="BlogTitle">
+              Making This Blog
             </a>
-            <p class="blogPostDate">Aug 14th 2023</p>
-          </div>
+          </h3>
+          <p class="blogPostDate">Aug 14th 2023</p>
+          <p class="blogSpacing">My experience creating this website</p>
         </div>
       </div>
     </div>
-    <!--Content-->
+    <!--Contact-->
     <div class="section" id="contact">
-      <div class="content">
+      <div class="content" id="contactVert">
         <h2 class="title greenText">~/Contact</h2>
         <h3>I'm currently open to opportunities. Feel free to contact me</h3>
-        <!--
+
         <form id="contactForm">
           <div>
             <strong class="formError">May not contain symbols</strong>
@@ -217,7 +214,6 @@
 
           <button type="submit" class="submit">Send</button>
         </form>
-        -->
       </div>
     </div>
   </body>
