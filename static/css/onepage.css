@@ -276,14 +276,7 @@ input:-webkit-autofill:focus {
     color: #503030;
 }
 
-navButtons.submit{
-    color: rgb(22 22 22);
-    background:none;
-    border: 1px solid aliceblue;
-    font-size: 1em;
-    font-family: 'Barlow', sans-serif;
-    width:fit-content;
-}
+
 
 @media (max-width:360px){
     #introPicContainer{
