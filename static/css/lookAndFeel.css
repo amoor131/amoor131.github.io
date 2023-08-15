@@ -1,0 +1,253 @@
+/**/
+
+/*navigation*/
+
+#fixedBar{
+    background-color: #231F1F;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    display:flex;
+    align-content:flex-end;
+    justify-content:space-around;
+    align-items:center;
+    box-shadow: 0px 10px 0px rgb(0 0 0 / 25%);
+}
+
+.navLink{
+    font-size: 40px;
+}
+
+/*General*/
+
+*{
+    border: 1px solid red;
+}
+
+body{
+    background-color: #503030;
+    color:aliceblue;
+    margin:0px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Barlow', sans-serif;
+}
+
+h1{
+    font-size:40px;
+    margin:0px;
+}
+
+p{
+    font-weight:200;
+    margin-block:20px;
+}
+
+a{
+    text-decoration:none;
+    cursor: pointer;
+}
+
+.greenText{
+    color:#7EA172;
+}
+
+.blueText{
+    color: #4753DB;
+}
+
+.separator {
+    border: none;
+    border-top: 2px solid white;
+    margin: 20px 0;
+}
+
+.section{
+    display:flex;
+    flex-direction: column;
+    min-height:84vh;
+    min-width: none;
+    width:1000px;
+    max-width:90%;
+    margin-bottom:20vh;
+    border-radius: 20px;
+    background-color: #231f1f;
+    align-self:center;
+    box-shadow: 12px 12px 10px rgb(0 0 0 / 25%),
+               -5px -5px 5px rgba(255, 255, 255, 0.25);
+}
+
+.section > .content{
+    padding: 2vh;
+    padding-top:4vh;
+}
+
+.title{
+    margin:0px;
+    
+}
+
+/*Greeting*/
+
+#splash{
+    margin-top: 13vh;
+}
+
+#welcome{
+    
+}
+
+#jumpToBlog{
+    text-decoration: underline;
+}
+
+#introPicContainer{
+    text-align-last: center;
+    margin-block:3vh;
+}
+
+#introPic{
+    min-width:80%;
+    min-height:80%;
+}
+
+/*AboutMe*/
+
+#aboutMe{
+    display:flex;
+    flex-direction: column;
+    background-color: #242024;
+}
+
+/*Skills*/
+
+#skills{
+    display:flex;
+    flex-direction: column;
+    padding-top:0px;
+}
+
+/*  these should be in grid form  */
+.techSkills{
+    display:grid;
+    grid-template-rows: repeat(3,auto);
+    grid-template-columns: repeat(2,auto);
+    justify-items:center;
+    align-content:space-evenly;
+}
+/*  these should flow vertically, could be grid  */
+.techSkill{
+    align-self:center;
+}
+
+.techName{
+}
+
+/*Projects*/
+
+#projects{
+    background-color: #202024;
+}
+
+.project{
+
+}
+
+.projectTitles{
+
+}
+
+.description{
+
+}
+
+/*Blog*/
+
+#blogLatestPost{
+    background-color: #202420;
+}
+
+#blogPosts{
+    
+}
+
+.recentBlogPost{
+    border-radius: 20px;
+    border: 3px solid white;
+    margin-block:2vh;
+    padding-inline:1vh;
+    color: #c6d2c6;
+    text-decoration: none;
+
+}
+
+.blogTitles{
+    margin:0;
+    color: #c6d2c6;
+}
+
+.blogPostDate{
+    font-size: .5em;
+    margin-inline: 0px;
+}
+
+/*Content*/
+
+#contact{
+    background-color: #2D2914;
+    margin-bottom:10%;
+}
+
+#contactForm{
+    display:flex;
+    flex-direction: column;
+    font-size:50px;
+    padding:1vh;
+    border: 1px solid white;
+}
+
+/* Style autofill appearance for inputs */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: aliceblue; /* Set text color to desired color */
+  transition: background-color 5000s ease-in-out 0s; /* Prevent background color change */
+}
+
+#name, #email, #message{
+    background-color: #ffffff00;
+    border:none;
+    color:aliceblue;
+    margin-block:2vh 3vh;
+    min-width:100%;
+    min-height:auto;
+    font-size: 50px;
+    font-family: 'Barlow', sans-serif;
+}
+
+#name:focus, #email:focus, #message:focus{
+    border: none;
+    outline:none;
+}
+
+#message{
+    height:fit-content;
+}
+
+/* */
+.formError{
+    display: none;
+    color: #503030;
+}
+
+.submit{
+    font-size:50px;
+    color: aliceblue;
+    background:none;
+    border: 1px solid aliceblue;
+    font-family: 'Barlow', sans-serif;
+    width:fit-content;
+}
