@@ -198,7 +198,7 @@ a{
     border-radius: 20px;
     border: 3px solid #958989;
     margin-block:2vh;
-    padding-inline:1vh;
+    padding-inline:2vh;
     color: #000000;
     text-decoration: none;
 
@@ -221,7 +221,7 @@ a{
 }
 
 .blogSpacing{
-    margin:10px;
+    margin: 0px 0px 20px 10px;
 }
 
 /*Contact*/
@@ -276,7 +276,14 @@ input:-webkit-autofill:focus {
     color: #503030;
 }
 
-
+.submit{
+    width: 4em;
+    height: 2em;
+    align-self:center;
+    background:none;
+    font-size:inherit;
+    font-family: 'Barlow', sans-serif;
+}
 
 @media (max-width:360px){
     #introPicContainer{

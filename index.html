@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <heading>
+    <title>Anthony Moore</title>
+    <link href="/static/css/onepage.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </heading>
+
+  <body>
+    <div id="fixedBar">
+      <content class="navButtons">
+        <div style="width: 60px">
+          <a href="" class="removeDefaultStyle">
+            <img src="/static/imgs/Ampersand.png" />
+          </a>
+        </div>
+        <div class="navRight">
+          <a href="#About">About</a>
+          <a href="#Projects">Projects</a>
+          <a href="#Blog">Blog</a>
+        </div>
+      </content>
+    </div>
+    <!--Greeting-->
+    <div class="section" id="splash">
+      <div class="content">
+        <div id="introPicContainer">
+          <img src="static/imgs/AnthonyStanding.jpg" id="introPic" />
+        </div>
+        <div class="">
+          <h1 class="title">
+            Hey, you've reached
+            <span class="greenText"> Anthony's Spot </span>
+          </h1>
+          <p>
+            a place where I document my journey in the world of web developement
+            and cyber security as a computer science graduate.
+          </p>
+          <p style="margin-top: 3vh">
+            Scroll to learn more about me or
+            <a href="/Blog" class="greenText" id="jumpToBlog">
+              Jump to my latest blog post.
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--AboutMe + Skills-->
+    <div class="section" id="aboutMe">
+      <div class="content">
+        <div id="personalSummary">
+          <h2 class="title greenText">~/AboutMe</h2>
+          <p>
+            Since graduating from Kent State University in Ohio, I've moved to
+            Nashville Tennessee to pursue oportunities in web development and
+            information security. In addition to expanding my knowledge in web
+            development through projects, I'm pursing the CompTIA A+, Network+,
+            and Security+ certifications. I'll write about this experience in
+            <a>my blog</a> as I recieve them.
+          </p>
+        </div>
+        <div id="skills">
+          <h2 class="title greenText">~/Skills</h2>
+          <div class="techSkills">
+            <div class="techSkill">
+              <h3>HTML</h3>
+            </div>
+            <div class="techSkill">
+              <h3>CSS</h3>
+            </div>
+            <div class="techSkill">
+              <h3>JAVASCRIPT</h3>
+            </div>
+            <div class="techSkill">
+              <h3>C++</h3>
+            </div>
+            <div class="techSkill">
+              <h3>PYTHON</h3>
+            </div>
+            <div class="techSkill">
+              <h3>RESTful APIs</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Projects-->
+    <div class="section" id="projects">
+      <div class="content">
+        <div>
+          <h2 class="title greenText">~/Projects</h2>
+          <!--OdenProjects-->
+          <div class="project">
+            <a href="/OdenProjects" class="blueText">
+              <h3 class="projectTitle">OdenProjects/</h3>
+            </a>
+            <p class="description">
+              A series of projects meant to demonstrate milestones in web
+              development knowledge
+            </p>
+          </div>
+          <!--GPXVisualizer-->
+          <div class="project">
+            <a href="https://gpxvis.com" class="projectTitles blueText">
+              <h3 class="projectTitle">GPXVisualizer/</h3>
+            </a>
+            <p class="description">
+              My group capstone project that uses location data from user
+              activities to create personal artwork
+            </p>
+          </div>
+          <!--Descrambler-->
+          <div class="project">
+            <a href="/Descrambler" class="projectTitles blueText">
+              <h3 class="projectTitle">Descrambler/</h3>
+            </a>
+            <p class="description">
+              A python program that tells you what English words can be made
+              with a given set of letters
+            </p>
+          </div>
+          <!--Blog Project-->
+          <div class="project">
+            <a href="/Blog" class="projectTitles blueText">
+              <h3 class="projectTitle">Blog/</h3>
+            </a>
+            <p class="description">
+              A record of the projects I’ve been working on, problems I
+              encountered, and lessons I learned
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Blog-->
+    <div class="section" id="blogLatestPosts">
+      <div class="content" id="postsFlow">
+        <h2 class="title greenText">~/LatestBlogPosts</h2>
+        <div class="recentBlogPost">
+          <h3 class="blogTitles">
+            <a href="/Blog/MakingThisBlog" class="BlogTitle">
+              Making This Blog
+            </a>
+          </h3>
+          <p class="blogPostDate">Aug 14th 2023</p>
+          <p class="blogSpacing">My experience creating this website</p>
+        </div>
+      </div>
+    </div>
+    <!--Contact-->
+    <div class="section" id="contact">
+      <div class="content" id="contactVert">
+        <h2 class="title greenText">~/Contact</h2>
+        <h3>I'm currently open to opportunities. Feel free to contact me</h3>
+
+        <form id="contactForm">
+          <div>
+            <strong class="formError">May not contain symbols</strong>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Name"
+            />
+          </div>
+          <div>
+            <strong class="formError">Must include '@'</strong>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Email"
+            />
+          </div>
+          <div>
+            <strong class="formError">Message may not be empty</strong>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              required
+              placeholder="Message"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
