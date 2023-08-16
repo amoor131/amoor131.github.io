@@ -173,6 +173,14 @@ a{
     background-color: none;
 }
 
+#projectsVert{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items:center;
+
+}
+
 .verticalContent{
     display:flex;
     flex-direction: column;
@@ -359,11 +367,4 @@ input:-webkit-autofill:focus {
         margin-left:15px;
     }
 
-    #projectsVert{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items:center;
-
-    }
 }
