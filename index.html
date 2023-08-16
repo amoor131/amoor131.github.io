@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <heading>
+  <head>
     <title>Anthony Moore</title>
     <link href="/static/css/onepage.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,8 +12,7 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </heading>
-
+  </head>
   <body>
     <div id="fixedBar">
       <content class="navButtons">
@@ -24,8 +23,8 @@
         </div>
         <div class="navRight">
           <a href="#aboutMe">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#blogLatestPosts">Blog</a>
+          <a href="/Projects.html">Projects</a>
+          <a href="/Blog">Blog</a>
         </div>
       </content>
     </div>
@@ -94,12 +93,12 @@
     </div>
     <!--Projects-->
     <div class="section" id="projects">
-      <div class="content">
+      <div class="content" id="projectsVert">
         <div>
           <h2 class="title greenText">~/Projects</h2>
           <!--OdenProjects-->
-          <div class="project">
-            <a href="/OdenProjects" class="blueText">
+          <div class="project" id="Oden">
+            <a href="/OdenProjects.html" class="blueText">
               <h3 class="projectTitle">OdenProjects/</h3>
             </a>
             <p class="description">
@@ -117,16 +116,6 @@
               activities to create personal artwork
             </p>
           </div>
-          <!--Descrambler-->
-          <div class="project">
-            <a href="/Descrambler" class="projectTitles blueText">
-              <h3 class="projectTitle">Descrambler/</h3>
-            </a>
-            <p class="description">
-              A python program that tells you what English words can be made
-              with a given set of letters
-            </p>
-          </div>
           <!--Blog Project-->
           <div class="project">
             <a href="/Blog" class="projectTitles blueText">
@@ -137,6 +126,19 @@
               encountered, and lessons I learned
             </p>
           </div>
+          <!--Descrambler-->
+          <div class="project">
+            <a href="/Descrambler" class="projectTitles blueText">
+              <h3 class="projectTitle">Descrambler/</h3>
+            </a>
+            <p class="description">
+              A python program that tells you what English words can be made
+              with a given set of letters
+            </p>
+          </div>
+        </div>
+        <div class="seeMore">
+          <a href="/Projects.html">See More</a>
         </div>
       </div>
     </div>
